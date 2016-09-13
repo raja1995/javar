@@ -3,9 +3,10 @@ public class reverse
 public static void main(String args[])
 {
 Scanner in=new Scanner(System.in);
-String s=in.nextLine();
+String s=in.next();
 int n=s.length();
-String r=new StringBuffer(s).reverse().toString();
-System.out.println(r);
+StringBuffer r=new StringBuffer(s);
+s=(String)r.reverse();
+System.out.println(s);
 }
 }
